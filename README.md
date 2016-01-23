@@ -71,6 +71,7 @@ Ogólny szkielet klasycznego algorytmu genetycznego:
 #Implementacja
 
 **Funkcja celu: [problem komiwojażera](https://pl.wikipedia.org/wiki/Problem_komiwoja%C5%BCera)**
+Celem jest znalezienie najkrótszej drogi łączącej wszystkie miasta zaczynającej się i kończącej się w określonym punkcie.
 
 **Wyniki:**
 
