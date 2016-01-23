@@ -7,6 +7,8 @@
  * < vicente@jdalmau.es >
  *
  * Implementation of the Hill Climbing algorithm (simple version).
+ *
+ * http://code.google.com/p/tspuib/source/browse/trunk/TravelingSalesMan/src/travelingsalesman/HillClimbing.java?r=12
  */
 
 import java.util.ArrayList;
