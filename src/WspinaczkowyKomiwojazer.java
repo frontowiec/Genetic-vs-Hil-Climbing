@@ -19,7 +19,7 @@ import java.util.ArrayList;
  */
 public class WspinaczkowyKomiwojazer {
 
-    RoutesMatrix distances;//TODO: zamień RoutesMatrix na tablicę wyczytywaną z pliku dat
+    RoutesMatrix distances;
 
     int sourceCity;
 
@@ -49,17 +49,21 @@ public class WspinaczkowyKomiwojazer {
 
     /**
      * @param from node where we start the search.
+     *
+     * startujemy z losowego punktu, przeglądamy jego sąsiadów, wybieramy tego sąsiada,
+     * który ma największą wartość ("idziemy w górę"), czynności powtarzamy do osiągnięcia maksimum lokalnego.
+     *
      */
     public void search (int from) {
 
         int currentTown = from;
 
-        while (nodes != distances.getCitiesCount()) {
+        while (nodes != distances.getCitiesCount()) {//dopóki ilość mist jest różna od zera
             // choose the closest town
-            int lowestDistance = Integer.MAX_VALUE;
-            int chosen = -1;
-            for (int i=0; i < distances.getCitiesCount(); i++) {
-                if (!followedRoute.contains(i)) {
+            int lowestDistance = Integer.MAX_VALUE; //najbliżej położone miasto
+            int chosen = -1;//?
+            for (int i=0; i < distances.getCitiesCount(); i++) { //po wszystkich mistach
+                if (!followedRoute.contains(i)) { //następna trasa zawiera i
                     int tempDistance = routeCost + getHeuristicValue(nodes-1); // f = g + h
                     if (tempDistance < lowestDistance) {
                         lowestDistance = tempDistance;
@@ -80,7 +84,6 @@ public class WspinaczkowyKomiwojazer {
 
     /**
      * executes the algorithm
-     * TODO: zamien ta funkcje na main pokazującą wyniki działania
      */
     public String execute () {
 
@@ -99,6 +102,13 @@ public class WspinaczkowyKomiwojazer {
         result += "Elapsed Time: "+(endTime-startTime)+" ms\n";
 
         return result;
+    }
+
+    public static void main(String[] args) {
+        RoutesMatrix routesMatrix = new RoutesMatrix(20);
+        WspinaczkowyKomiwojazer wspinaczkowyKomiwojazer = new WspinaczkowyKomiwojazer(routesMatrix, 2);
+
+        System.out.println(wspinaczkowyKomiwojazer.execute());
     }
 
 }
