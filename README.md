@@ -32,7 +32,13 @@ Ważne dla zrozumienia tego algorytmu jest pojęcie sąsiada. Sąsiedztwo jest z
 
 ![alt text](http://paradiseo.gforge.inria.fr/pub/img/schemaLS.jpg "http://paradiseo.gforge.inria.fr/pub/img/schemaLS.jpg")
 
-W podejmowanym problemie (problem komiwojażera) przestrzenią stanów (rozwiązań) są kompletne ścieżki, podobieństwo kompletnych ścieżek (rozwiązań) polega na np. zamianie kolejności poszczególnych miast, czyli nie wielkiej modyfikacji poszczególnych rozwiązań - to jest właśnie esencja algorytmu wspinaczki
+W podejmowanym problemie (problem komiwojażera) przestrzenią stanów (rozwiązań) są kompletne ścieżki, podobieństwo kompletnych ścieżek (rozwiązań) polega na np. zamianie kolejności poszczególnych miast, czyli nie wielkiej modyfikacji poszczególnych rozwiązań (lokalne przeszukiwanie i poprawa rozwiązań)
+Do zdefiniowania lokalnego wyszukiwania i poprawiania trzeba zdefiniować:
+1. reprezentacje rozwiązania
+2. reprezentacje sąsiada
+3. funkcję oceny rozwiązania
+4. funkcję oceny sąsiada
+5. sąsiedztwo (generowanie sąsiadów)
 
 ###Algorymt genetyczny (klasyczny)
  By zrozumieć zasadę działania tego algorytmu, trzeba przedstawić podstawowe pojęcia z dziedziny algorytmów ewolucyjnych:
@@ -94,3 +100,5 @@ Celem jest znalezienie najkrótszej drogi łączącej wszystkie miasta zaczynaj�
 [http://edu.pjwstk.edu.pl/wyklady/nai/scb/wyklad5/w5.htm](http://edu.pjwstk.edu.pl/wyklady/nai/scb/wyklad5/w5.htm)
 
 [http://edu.pjwstk.edu.pl/wyklady/nai/scb/wyklad10/w10.htm](http://edu.pjwstk.edu.pl/wyklady/nai/scb/wyklad10/w10.htm)
+
+[http://paradiseo.gforge.inria.fr/index.php?n=Doc.TutoMOLesson1](http://paradiseo.gforge.inria.fr/index.php?n=Doc.TutoMOLesson1)
