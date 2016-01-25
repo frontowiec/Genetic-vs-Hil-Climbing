@@ -108,7 +108,7 @@ Powyższy rysunek ma na celu przedstawienie kilku założeń:
  
 Przed implementacją warto zapoznać się ze wzorem na odległość dwóch punktów na płaszczyźnie:
 
-    Dla punktu z [Ux,Uy] do [Vx,Vy] wzór jest zdefiniowany sqrt((Ux-Vx)^2 + (Uy-Vy)^2)
+    Dla punktu z [Ux,Uy] do [Vx,Vy] wzór jest zdefiniowany następująco: sqrt((Ux-Vx)^2 + (Uy-Vy)^2)
  
 **Wyniki:**
 

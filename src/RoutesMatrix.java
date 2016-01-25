@@ -27,14 +27,25 @@ public class RoutesMatrix {
     }
 
 
+    /**
+     * Geter dla listy z trasami
+     * @return List<Point2D.Double>
+     */
     public List<Point2D.Double> getCoordinatesList() {
         return coordinatesList;
     }
 
+    /**
+     * seter dla listy z trasami
+     * @param coordinatesList
+     */
     public void setCoordinatesList(List<Point2D.Double> coordinatesList) {
         this.coordinatesList = coordinatesList;
     }
 
+    /**
+     * Wyświetla macierz na standardowe wyjście
+     */
     public void displayCurrentMatrix() {
 
         System.out.println("");
@@ -46,6 +57,10 @@ public class RoutesMatrix {
 
     }
 
+    /**
+     * Funkcja licząca odległości pomiędzy dwoma punktami ( zob. Point2D.distance() )
+     * @return double
+     */
     public double getTotalDistance() {
 
         double totalDistance = 0;
