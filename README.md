@@ -92,12 +92,24 @@ Ogólny szkielet klasycznego algorytmu genetycznego:
 
 #Implementacja
 
+
 **Funkcja celu: [problem komiwojażera](https://pl.wikipedia.org/wiki/Problem_komiwoja%C5%BCera)**
 
 Celem jest znalezienie najkrótszej drogi łączącej wszystkie miasta zaczynającej się i kończącej się w określonym punkcie.
 
 
+![alt text](https://github.com/marcinsirocki/Genetic-vs-Hil-Climbing/blob/master/resources/schemat.png?raw=true "")
 
+Powyższy rysunek ma na celu przedstawienie kilku założeń:
+
+ - każdy punkt jest ze sobą połączony
+ - punkty na siatce odpowiadają wartością w zaimlementowanej macierzy
+ - dla tras jest liczona tylko odległość (bez kosztów i czasu)
+ 
+Przed implementacją warto zapoznać się ze wzorem na odległość dwóch punktów na płaszczyźnie:
+
+    Dla punktu z [Ux,Uy] do [Vx,Vy] wzór jest zdefiniowany sqrt((Ux-Vx)^2 + (Uy-Vy)^2)
+ 
 **Wyniki:**
 
 **Podsumowanie:**

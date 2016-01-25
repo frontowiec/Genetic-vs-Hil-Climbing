@@ -5,13 +5,13 @@ import java.util.Collections;
  * Created by Marcin Sirocki
  * marcinsirocki@gmail.com
  *
- * Klasa implementująca algorytm wspinaczkowy dla problemy komiwojażera.
+ * Klasa implementująca algorytm wspinaczkowy dla problemu komiwojażera.
  *
  */
 public class WspinaczkowyKomiwojazer {
 
     /**
-     * Instancja klasy dostarczającej macierzy danych oraz funkcji obiczania długości tras.
+     * Instancja klasy dostarczającej macierz danych oraz funkcji obiczania długości tras.
      */
     private RoutesMatrix routesMatrix = new RoutesMatrix();
 
@@ -35,7 +35,7 @@ public class WspinaczkowyKomiwojazer {
             for (int j = 1; j < routesMatrix.getCoordinatesList().size(); j++) {//przestaw o jedną pozycję w dół z wyjątkiem pierwszej
 
                 if (j < routesMatrix.getCoordinatesList().size()-2) { //i ostatniej
-                    Collections.swap(routesMatrix.getCoordinatesList(), j, j + 1);
+                    Collections.swap(routesMatrix.getCoordinatesList(), j, j + 1);//przestaw
                 }
 
                 routesMatrix.displayCurrentMatrix();//wyświetl macierz tras po przestawieniu
