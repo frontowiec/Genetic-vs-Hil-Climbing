@@ -34,10 +34,15 @@ Ważne dla zrozumienia tego algorytmu jest pojęcie sąsiada. Sąsiedztwo jest z
 
 W podejmowanym problemie (problem komiwojażera) przestrzenią stanów (rozwiązań) są kompletne ścieżki, podobieństwo kompletnych ścieżek (rozwiązań) polega na np. zamianie kolejności poszczególnych miast, czyli nie wielkiej modyfikacji poszczególnych rozwiązań (lokalne przeszukiwanie i poprawa rozwiązań)
 Do zdefiniowania lokalnego wyszukiwania i poprawiania trzeba zdefiniować:
+
 1. reprezentacje rozwiązania
+
 2. reprezentacje sąsiada
+
 3. funkcję oceny rozwiązania
+
 4. funkcję oceny sąsiada
+
 5. sąsiedztwo (generowanie sąsiadów)
 
 ###Algorymt genetyczny (klasyczny)
@@ -90,6 +95,8 @@ Ogólny szkielet klasycznego algorytmu genetycznego:
 **Funkcja celu: [problem komiwojażera](https://pl.wikipedia.org/wiki/Problem_komiwoja%C5%BCera)**
 
 Celem jest znalezienie najkrótszej drogi łączącej wszystkie miasta zaczynającej się i kończącej się w określonym punkcie.
+
+
 
 **Wyniki:**
 
