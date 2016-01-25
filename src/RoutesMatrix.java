@@ -11,6 +11,7 @@
  */
 
 import java.util.Random;
+//TODO: powinna wyczytywać dane z pliku a nie losować
 
 
 /**
@@ -34,6 +35,8 @@ public class RoutesMatrix {
         // fill the matrix with random values
         // a new random generator (seed based on the current time)
         Random generator = new Random();
+
+
 
         for (int i=0; i<cities; i++) {
             for (int j=i; j<cities; j++) {

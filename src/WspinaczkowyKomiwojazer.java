@@ -25,7 +25,7 @@ public class WspinaczkowyKomiwojazer {
 
     String result = new String();
 
-    ArrayList followedRoute;
+    ArrayList followedRoute; //zbiór rozwiązań
     int nodes = 0;
     int routeCost = 0;
 
@@ -61,11 +61,11 @@ public class WspinaczkowyKomiwojazer {
         while (nodes != distances.getCitiesCount()) {//dopóki ilość mist jest różna od zera
             // choose the closest town
             int lowestDistance = Integer.MAX_VALUE; //najbliżej położone miasto
-            int chosen = -1;//?
+            int chosen = -1;//tymczasowa zmienna dodawana do zbioru rozwiązań
             for (int i=0; i < distances.getCitiesCount(); i++) { //po wszystkich mistach
-                if (!followedRoute.contains(i)) { //następna trasa zawiera i
+                if (!followedRoute.contains(i)) { //następna trasa zawiera i w zbiorze rozwiązań
                     int tempDistance = routeCost + getHeuristicValue(nodes-1); // f = g + h
-                    if (tempDistance < lowestDistance) {
+                    if (tempDistance < lowestDistance) { //wybieramy tego sąsiada, który ma największą wartość
                         lowestDistance = tempDistance;
                         chosen = i;
                     }
@@ -105,7 +105,7 @@ public class WspinaczkowyKomiwojazer {
     }
 
     public static void main(String[] args) {
-        RoutesMatrix routesMatrix = new RoutesMatrix(20);
+        RoutesMatrix routesMatrix = new RoutesMatrix(19);
         WspinaczkowyKomiwojazer wspinaczkowyKomiwojazer = new WspinaczkowyKomiwojazer(routesMatrix, 2);
 
         System.out.println(wspinaczkowyKomiwojazer.execute());

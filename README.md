@@ -10,17 +10,27 @@ Działanie **algortmów heurystycznych** polega na znajdowaniu rozwiązań, jedn
 
 Ogólny szkielet algorymu wspinaczki:
 
-    x0 = Random(X)
-    	do
-    		max=x0
-    		for(x in N(x0))
-    			if(f(x)>f(max)) max=x
-    		end for
-    		if(max=x0) break
-    		x0=max
-    	while(1)
+       Choose randomly initial solution x
+        Do
+          best <- first neighbor of x
+          For all y in the neighborhood of x
+             If (f(y) > f(best))
+                best <- y
+             endif
+          endfor
+          If (f(x) < f(best))
+             x <- best
+             continue <- true
+          else
+             continue <- false
+          endif
+          While continue == true
+
+####Pojęcie sąsiedztwa
 
 Ważne dla zrozumienia tego algorytmu jest pojęcie sąsiada. Sąsiedztwo jest zdefiniowane na przestrzeni stanów jako podobieństwo kompletnych rozwiązań. 
+
+![alt text](http://paradiseo.gforge.inria.fr/pub/img/schemaLS.jpg "http://paradiseo.gforge.inria.fr/pub/img/schemaLS.jpg")
 
 
 ###Algorymt genetyczny (klasyczny)
