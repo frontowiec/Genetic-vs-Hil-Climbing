@@ -110,11 +110,11 @@ Przed implementacją warto zapoznać się ze wzorem na odległość dwóch punkt
 
     Dla punktu z [Ux,Uy] do [Vx,Vy] wzór jest zdefiniowany następująco: sqrt((Ux-Vx)^2 + (Uy-Vy)^2)
  
-**Wyniki:**
+##Wyniki
 
-**Podsumowanie:**
+##Podsumowanie
 
-**Źródła**
+###Źródła
 
 [http://edu.pjwstk.edu.pl/wyklady/nai/scb/wyklad5/w5.htm](http://edu.pjwstk.edu.pl/wyklady/nai/scb/wyklad5/w5.htm)
 

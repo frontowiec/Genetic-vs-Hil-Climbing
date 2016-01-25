@@ -11,10 +11,8 @@ import java.util.List;
 public class RoutesMatrix {
 
     private List<Point2D.Double> coordinatesList = new ArrayList<>();
-    private int NUMBER_OF_CITIES = 6;
 
     public RoutesMatrix() {
-
 
         coordinatesList.add(new Point2D.Double(0, 0));//zawsze startuje z punktu A
         coordinatesList.add(new Point2D.Double(1, 2));
@@ -24,6 +22,14 @@ public class RoutesMatrix {
         coordinatesList.add(new Point2D.Double(1, 0));
         coordinatesList.add(new Point2D.Double(0, 0));//zawsze konczy w punkcie A
 
+    }
+
+    /**
+     * Zwraca liczbę miast
+     * @return integer
+     */
+    public int getNumberOfCities(){
+        return coordinatesList.size()-1;
     }
 
 
@@ -66,7 +72,7 @@ public class RoutesMatrix {
         double totalDistance = 0;
 
         for (int i = 0; i < coordinatesList.size(); i++) {
-            if (i < NUMBER_OF_CITIES) {
+            if (i < getNumberOfCities()) {
                 double distance = coordinatesList.get(i).distance(coordinatesList.get(i + 1));
 
                 totalDistance = totalDistance + distance;
