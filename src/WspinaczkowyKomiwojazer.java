@@ -9,18 +9,10 @@ import java.util.List;
  */
 public class WspinaczkowyKomiwojazer {
 
-
     public static void main(String[] args) {
 
         RoutesMatrix matrix = new RoutesMatrix();
-        System.out.println("Dla trasy: ");
-        matrix.displayCurrentMatrix();
-        System.out.println("Długość trasy wynosi: " + matrix.getTotalDistance());
-        System.out.println("");
-        matrix.swap();
-        matrix.displayCurrentMatrix();
-        System.out.println("Długość trasy wynosi: " + matrix.getTotalDistance());
-
+        matrix.search();
     }
 
 
