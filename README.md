@@ -32,6 +32,7 @@ Ważne dla zrozumienia tego algorytmu jest pojęcie sąsiada. Sąsiedztwo jest z
 
 ![alt text](http://paradiseo.gforge.inria.fr/pub/img/schemaLS.jpg "http://paradiseo.gforge.inria.fr/pub/img/schemaLS.jpg")
 
+W podejmowanym problemie (problem komiwojażera) przestrzenią stanów (rozwiązań) są kompletne ścieżki, podobieństwo kompletnych ścieżek (rozwiązań) polega na np. zamianie kolejności poszczególnych miast, czyli nie wielkiej modyfikacji poszczególnych rozwiązań - to jest właśnie esencja algorytmu wspinaczki
 
 ###Algorymt genetyczny (klasyczny)
  By zrozumieć zasadę działania tego algorytmu, trzeba przedstawić podstawowe pojęcia z dziedziny algorytmów ewolucyjnych:
