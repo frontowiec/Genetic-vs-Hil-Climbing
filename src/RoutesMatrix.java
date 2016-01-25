@@ -3,7 +3,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by marcin on 25.01.16.
+ * Created by Marcin Sirocki
+ * marcinsirocki@gmail.com
+ *
+ * Klasa definiująca macierz danych oraz funkcję obiczania długości tras.
  */
 public class RoutesMatrix {
 

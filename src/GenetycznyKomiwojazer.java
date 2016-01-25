@@ -1,5 +1,6 @@
 /**
- * Created by marcin on 23.01.16.
+ * Created by Marcin Sirocki
+ * marcinsirocki@gmail.com
  */
 public class GenetycznyKomiwojazer {
 }

@@ -2,13 +2,25 @@
 import java.util.Collections;
 
 /**
- * Created by marcin on 25.01.16.
+ * Created by Marcin Sirocki
+ * marcinsirocki@gmail.com
+ *
+ * Klasa implementująca algorytm wspinaczkowy dla problemy komiwojażera.
+ *
  */
 public class WspinaczkowyKomiwojazer {
 
+    /**
+     * Instancja klasy dostarczającej macierzy danych oraz funkcji obiczania długości tras.
+     */
     private RoutesMatrix routesMatrix = new RoutesMatrix();
 
-
+    /**
+     * Funkcja szukająca najkrótszej trasy pomiędzy punktami zdefiniowanymi w macierzy.
+     * Algorytm szuka w przestrzeni stanów (w tym wypadku jest nią miacierz z wyznaczonymi trasami) podobieństw
+     * rozwiązań (uzyskano je jako zmiany kolejności punktów w macierzy) - sąsiedztwa rozwiązań.
+     * Wybierany jest ten sąsiad który ma najmniejszą wartość.
+     */
     public void search() {
 
         double totalDistance = 0;
@@ -20,9 +32,9 @@ public class WspinaczkowyKomiwojazer {
 
         for (int i = 1; i <  routesMatrix.getCoordinatesList().size(); i++) {//każdy element w tablicy
 
-            for (int j = 1; j < routesMatrix.getCoordinatesList().size(); j++) {//przestaw po jedną pozycję w dół z wyjątkiem pierwszej i ostatniej
+            for (int j = 1; j < routesMatrix.getCoordinatesList().size(); j++) {//przestaw o jedną pozycję w dół z wyjątkiem pierwszej
 
-                if (j < routesMatrix.getCoordinatesList().size()-2) { //ogranicz się do przedostatniej pozycji w liście
+                if (j < routesMatrix.getCoordinatesList().size()-2) { //i ostatniej
                     Collections.swap(routesMatrix.getCoordinatesList(), j, j + 1);
                 }
 
