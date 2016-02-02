@@ -36,6 +36,9 @@ public class GenetycznyKomiwojazer {
         City city5 = new City(1, 0);
         TourManager.addCity(city5);
 
+        City city6 = new City(0, 0);
+        TourManager.addCity(city6);
+
 
         // Initialize population
         Population pop = new Population(50, true);

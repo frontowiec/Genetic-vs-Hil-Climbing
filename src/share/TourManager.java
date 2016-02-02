@@ -2,6 +2,9 @@ package share;
 
 import java.util.ArrayList;
 
+/**
+ * Repozytorium konkretnych miast
+ */
 public class TourManager {
 
     // Holds our cities

@@ -3,6 +3,9 @@ package share;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * Klasa zarządzająca trasami
+ */
 public class Tour{
 
     // Holds our tour of cities
@@ -54,7 +57,7 @@ public class Tour{
     }
 
     // Gets the total distance of the tour
-    public int getDistance(){
+    public double getDistance(){
         if (distance == 0) {
             int tourDistance = 0;
             // Loop through our tour's cities

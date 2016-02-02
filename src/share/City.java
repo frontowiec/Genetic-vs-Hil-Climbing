@@ -1,8 +1,8 @@
 package share;
 
 public class City {
-    int x;
-    int y;
+    double x;
+    double y;
 
     // Constructs a randomly placed city
     public City(){
@@ -17,19 +17,19 @@ public class City {
     }
 
     // Gets city's x coordinate
-    public int getX(){
+    public double getX(){
         return this.x;
     }
 
     // Gets city's y coordinate
-    public int getY(){
+    public double getY(){
         return this.y;
     }
 
     // Gets the distance to given city
     public double distanceTo(City city){
-        int xDistance = Math.abs(getX() - city.getX());
-        int yDistance = Math.abs(getY() - city.getY());
+        double xDistance = Math.abs(getX() - city.getX());
+        double yDistance = Math.abs(getY() - city.getY());
         double distance = Math.sqrt( (xDistance*xDistance) + (yDistance*yDistance) );
 
         return distance;
