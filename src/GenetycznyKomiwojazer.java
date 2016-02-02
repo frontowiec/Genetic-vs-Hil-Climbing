@@ -1,7 +1,8 @@
-import share.City;
 import share.GA;
 import share.Population;
 import share.TourManager;
+
+import java.awt.geom.Point2D;
 
 /**
  * Created by Marcin Sirocki
@@ -16,22 +17,22 @@ public class GenetycznyKomiwojazer {
 
 
         // Create and add our cities
-        City city = new City(0, 0);
+        Point2D.Double city = new Point2D.Double(0, 0);
         TourManager.addCity(city);
 
-        City city1 = new City(1, 2);
+        Point2D.Double city1 = new Point2D.Double(1, 2);
         TourManager.addCity(city1);
 
-        City city2 = new City(0, 2);
+        Point2D.Double city2 = new Point2D.Double(0, 2);
         TourManager.addCity(city2);
 
-        City city3 = new City(0, 1);
+        Point2D.Double city3 = new Point2D.Double(0, 1);
         TourManager.addCity(city3);
 
-        City city4 = new City(2, 1);
+        Point2D.Double city4 = new Point2D.Double(2, 1);
         TourManager.addCity(city4);
 
-        City city5 = new City(1, 0);
+        Point2D.Double city5 = new Point2D.Double(1, 0);
         TourManager.addCity(city5);
 
 

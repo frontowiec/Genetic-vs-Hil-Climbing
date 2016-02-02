@@ -5,6 +5,8 @@
 
 package share;
 
+import java.awt.geom.Point2D;
+
 public class GA {
 
     /* GA parameters */
@@ -93,8 +95,8 @@ public class GA {
                 int tourPos2 = (int) (tour.tourSize() * Math.random());
 
                 // Get the cities at target position in tour
-                City city1 = tour.getCity(tourPos1);
-                City city2 = tour.getCity(tourPos2);
+                Point2D.Double city1 = tour.getCity(tourPos1);
+                Point2D.Double city2 = tour.getCity(tourPos2);
 
                 // Swap them around
                 tour.setCity(tourPos2, city1);
