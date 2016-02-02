@@ -71,7 +71,6 @@ public class WspinaczkowyKomiwojazer {
         long endTime = System.nanoTime();
         System.out.println("Wyszukana w czasie " + (endTime - startTime) + " ns");
 
-
     }
 
 
