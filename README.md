@@ -113,7 +113,7 @@ Przed implementacją warto zapoznać się ze wzorem na odległość dwóch punkt
 ##Wyniki
 
     Szukanie trasy metodą genetyczną
-    |2.0, 1.0|1.0, 2.0|0.0, 2.0|0.0, 1.0|0.0, 0.0|0.0, 0.0|1.0, 0.0|
+    0.0 , 1.0 | 0.0 , 2.0 | 1.0 , 2.0 | 2.0 , 1.0 | 1.0 , 0.0 | 0.0 , 0.0 | 0.0 , 0.0 |
     Najkrótsza droga to: 6.0
     Wyszukana w czasie 58397404 ns
 
