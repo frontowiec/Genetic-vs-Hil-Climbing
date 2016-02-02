@@ -112,7 +112,21 @@ Przed implementacją warto zapoznać się ze wzorem na odległość dwóch punkt
  
 ##Wyniki
 
+    Szukanie trasy metodą genetyczną
+    |2.0, 1.0|1.0, 2.0|0.0, 2.0|0.0, 1.0|0.0, 0.0|0.0, 0.0|1.0, 0.0|
+    Najkrótsza droga to: 6.0
+    Wyszukana w czasie 58397404 ns
+
+    Szukanie trasy metodą wspinaczkową
+    0.0 , 0.0 | 1.0 , 0.0 | 2.0 , 1.0 | 1.0 , 2.0 | 0.0 , 2.0 | 0.0 , 1.0 | 0.0 , 0.0 |
+    Najkrótsza droga to: 6.82842712474619
+    Wyszukana w czasie 11791317 ns
+
 ##Podsumowanie
+
+Oba algorytmy nie zapewniają rozwiązania optymalnego czy poprawnego, zwłasza przy dużej liczbie danych. 
+Zasadnicza różnica pomiędzy algorytmami leży w sposobie poszukiwania danego rozwiązania.
+Dla **algorytmu wspinaczkowego** proces ten będzie miał ... , natomiast w **alogrytmie genetycznym** dzięki procesowi krzyżowania możliwa jest 
 
 ###Źródła
 
