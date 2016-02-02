@@ -21,6 +21,7 @@ public class Population {
                 newTour.generateIndividual();
                 saveTour(i, newTour);
             }
+
         }
     }
 

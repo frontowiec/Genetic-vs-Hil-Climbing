@@ -1,3 +1,4 @@
+import share.City;
 import share.GA;
 import share.Population;
 import share.TourManager;
@@ -17,22 +18,22 @@ public class GenetycznyKomiwojazer {
 
 
         // Create and add our cities
-        Point2D.Double city = new Point2D.Double(0, 0);
+        City city = new City(0, 0);
         TourManager.addCity(city);
 
-        Point2D.Double city1 = new Point2D.Double(1, 2);
+        City city1 = new City(1, 2);
         TourManager.addCity(city1);
 
-        Point2D.Double city2 = new Point2D.Double(0, 2);
+        City city2 = new City(0, 2);
         TourManager.addCity(city2);
 
-        Point2D.Double city3 = new Point2D.Double(0, 1);
+        City city3 = new City(0, 1);
         TourManager.addCity(city3);
 
-        Point2D.Double city4 = new Point2D.Double(2, 1);
+        City city4 = new City(2, 1);
         TourManager.addCity(city4);
 
-        Point2D.Double city5 = new Point2D.Double(1, 0);
+        City city5 = new City(1, 0);
         TourManager.addCity(city5);
 
 

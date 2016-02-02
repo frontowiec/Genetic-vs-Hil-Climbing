@@ -1,26 +1,24 @@
 package share;
 
-
-import java.awt.geom.Point2D;
 import java.util.ArrayList;
 
 public class TourManager {
 
     // Holds our cities
-    private static ArrayList destinationCities = new ArrayList<Point2D.Double>();
+    private static ArrayList destinationCities = new ArrayList<City>();
 
     // Adds a destination city
-    public static void addCity(Point2D.Double city) {
+    public static void addCity(City city) {
         destinationCities.add(city);
     }
 
     // Get a city
-    public static Point2D.Double getCity(int index) {
-        return (Point2D.Double) destinationCities.get(index);
+    public static City getCity(int index){
+        return (City)destinationCities.get(index);
     }
 
     // Get the number of destination cities
-    public static int numberOfCities() {
+    public static int numberOfCities(){
         return destinationCities.size();
     }
 }

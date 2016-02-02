@@ -1,18 +1,12 @@
 package share;
-/*
-* Tour.java
-* Stores a candidate tour
-*/
 
-
-import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class Tour{
 
     // Holds our tour of cities
-    private ArrayList tour = new ArrayList<Point2D.Double>();
+    private ArrayList tour = new ArrayList<City>();
     // Cache
     private double fitness = 0;
     private int distance = 0;
@@ -39,12 +33,12 @@ public class Tour{
     }
 
     // Gets a city from the tour
-    public Point2D.Double getCity(int tourPosition) {
-        return (Point2D.Double)tour.get(tourPosition);
+    public City getCity(int tourPosition) {
+        return (City)tour.get(tourPosition);
     }
 
     // Sets a city in a certain position within a tour
-    public void setCity(int tourPosition, Point2D.Double city) {
+    public void setCity(int tourPosition, City city) {
         tour.set(tourPosition, city);
         // If the tours been altered we need to reset the fitness and distance
         fitness = 0;
@@ -66,10 +60,10 @@ public class Tour{
             // Loop through our tour's cities
             for (int cityIndex=0; cityIndex < tourSize(); cityIndex++) {
                 // Get city we're travelling from
-                Point2D.Double fromCity = getCity(cityIndex);
+                City fromCity = getCity(cityIndex);
                 // City we're travelling to
-                Point2D.Double destinationCity;
-                // Check we're not on our tour's last city, if we are set our
+                City destinationCity;
+                // Check we're not on our tour's last city, if we are set our 
                 // tour's final destination city to our starting city
                 if(cityIndex+1 < tourSize()){
                     destinationCity = getCity(cityIndex+1);
@@ -78,7 +72,7 @@ public class Tour{
                     destinationCity = getCity(0);
                 }
                 // Get the distance between the two cities
-                tourDistance += fromCity.distance(destinationCity);
+                tourDistance += fromCity.distanceTo(destinationCity);
             }
             distance = tourDistance;
         }
@@ -91,7 +85,7 @@ public class Tour{
     }
 
     // Check if the tour contains a city
-    public boolean containsCity(Point2D.Double city){
+    public boolean containsCity(City city){
         return tour.contains(city);
     }
 
