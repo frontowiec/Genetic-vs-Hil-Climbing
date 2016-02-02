@@ -1,4 +1,6 @@
 
+import share.RoutesMatrix;
+
 import java.util.Collections;
 
 /**
@@ -61,6 +63,7 @@ public class WspinaczkowyKomiwojazer {
 
     public static void main(String[] args) {
         WspinaczkowyKomiwojazer wspinaczkowyKomiwojazer = new WspinaczkowyKomiwojazer();
+        System.out.println("Szukanie trasy metodą wspinaczkową");
         long startTime = System.nanoTime();
 
         wspinaczkowyKomiwojazer.search();

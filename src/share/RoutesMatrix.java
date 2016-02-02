@@ -1,3 +1,5 @@
+package share;
+
 import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.List;
@@ -57,7 +59,7 @@ public class RoutesMatrix {
         System.out.println("");
 
         for (int i = 0; i < coordinatesList.size(); i++) {
-            System.out.println(coordinatesList.get(i).getX() + " ; " + coordinatesList.get(i).getY());
+            System.out.print(coordinatesList.get(i).getX() + " , " + coordinatesList.get(i).getY() + " | ");
         }
 
 
@@ -83,6 +85,9 @@ public class RoutesMatrix {
         return totalDistance;
     }
 
+    public Point2D.Double getCity(int index){
+        return (Point2D.Double) coordinatesList.get(index);
+    }
 
 
 
